@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
+  <title>MyMovies</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="/stylesheets/style.css">
@@ -66,28 +66,28 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action="" method="post">
+          <form action="/" method="post" enctype="multipart/form-data">
             <div class="form-group">
               <label for="">Nome do Filme</label>
-              <input class="form-control" type="text" name="name" id="">
+              <input class="form-control" type="text" name="name" id="name">
             </div>
             <div class="form-group">
               <label for="">Descrição do Filme</label>
-              <input class="form-control" type="text" name="description" id="">
+              <input class="form-control" type="text" name="description" id="description">
             </div>
             <div class="form-group">
               <label for="">Capa do Filme</label>
-              <input class="form-control" type="file" name="poster" id="">
+              <input class="form-control" type="file" name="poster" id="poster">
             </div>
             <div class="form-group">
               <label for="">Já assistiu o filme?</label>
-              <input class="form-control" type="checkbox" name="viewMovie" id="">
+              <input class="form-control" type="checkbox" name="watched" id="watched">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" class="btn btn-primary">Finalizar</button>
             </div>
           </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary">Finalizar</button>
         </div>
       </div>
     </div>
