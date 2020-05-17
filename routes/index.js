@@ -17,7 +17,9 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 /* GET home page. */
-router.get('/', indexController.create);
-router.post('/', upload.any() ,indexController.store);
+router.get('/', indexController.index);
+router.post('/cadastrar', upload.any() ,indexController.store);
+
+router.get('/assistir/:id', indexController.createWatched)
 
 module.exports = router;
